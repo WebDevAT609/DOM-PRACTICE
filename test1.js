@@ -30,7 +30,7 @@ function updatePra() {
     pra.textContent = a
 }
 
-    //  style and appedn the count
+    //  style and append the count
 pra.style.color = "blue"
 pra.append(a)
 
