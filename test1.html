@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Project</title>
+    <style>
+        body{
+            background-color: #212121;
+        }
+        h3{
+            color: white;
+            font: 2em sans-serif;
+        }
+        .box{
+            border: 1px solid white;
+            width: 20vw;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 20px;
+            margin: auto;
+            margin-top: 300px;
+        }
+        button{
+            margin: 10px 0px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:active{
+            transform: scale(0.9);
+        }
+        #increase{
+            background: palegreen;
+            color: rgb(12, 12, 12);
+        }
+        #increase:active{
+            box-shadow: 0 0 10px 0 palegreen;
+        }
+          #decrease{
+            background: rgb(240, 45, 6);
+            color: white;
+        }
+        #decrease:active{
+            box-shadow: 0 0 10px 0 rgb(240, 45, 6);
+        }
+          #reset{
+            background: rgb(20, 88, 204);
+            color: white;
+        }
+        #reset:active{
+            box-shadow: 0 0 10px 0 rgb(20, 88, 204);
+        }
+
+        @media (max-width:700px) {
+            .box{
+               background-color: white;
+               width: 80vw;
+               height: 80vh;
+               box-shadow:  0 0 10px 0  white;
+              margin-top: 0px;
+            }
+
+            h3{
+                font-size: 20vw;
+            }
+
+            button{
+                font-size: 30px;
+                padding: 10px 20px;
+                border-radius: 15px;
+                box-shadow:  0 0 5px 0 black;
+                margin-bottom: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3 id="pr"></h3>
+        <button id="increase" type="button">Increase</button>
+        <button id="decrease" type="button">Decrease</button>
+        <button id="reset" type="button">RESET</button>
+
+        <script src="test1.js"></script>
+</body>
+</html>
