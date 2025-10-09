@@ -36,7 +36,8 @@ pra.append(a)
 
                 //  reset btn
 resetBtn.addEventListener("click", () => {
-    pra.textContent = 0
+    a = 0;
+    updatePra()
     pra.style.color = "blue"
 })
 
